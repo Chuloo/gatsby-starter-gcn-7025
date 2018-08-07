@@ -67,9 +67,10 @@ export const query = graphql`
       heroImage {
         title
         sizes(maxWidth: 1800) {
-          ...GatsbyContentfulSizes_withWebp_noBase64
+          # Removing the '_noBase64' adds the 20x20 placeholder for blur up
+          ...GatsbyContentfulSizes_withWebp 
         }
-        ogimg: resize(width: 1800) {
+        ogimg: resize(width: 1800) {  
           src
           width
           height

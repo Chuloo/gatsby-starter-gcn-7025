@@ -55,7 +55,7 @@ const Hero = props => (
     <BgImg
       height={props.height}
       sizes={props.image.sizes}
-      backgroundColor={'#eeeeee'}
+      // backgroundColor={'#eeeeee'}
     />
     <Title>{props.title}</Title>
   </Wrapper>

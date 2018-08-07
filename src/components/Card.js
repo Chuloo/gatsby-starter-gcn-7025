@@ -54,7 +54,7 @@ const Card = props => {
   return (
     <Post>
       <Link to={`/${props.slug}/`}>
-        <Img sizes={props.image.sizes} backgroundColor={'#eeeeee'} />
+        <Img sizes={props.image.sizes} />
         <Title>{props.title}</Title>
         <Date>{props.date}</Date>
         <Excerpt
